@@ -1,10 +1,15 @@
 import React, { Component } from 'react';
 
+import File from '../releases/File';
+
 import { Link } from 'react-router-dom';
 
-class Home extends Component {
-    state = {}
+class Guide extends Component {
+
     render() { 
+
+        const { proj } = this.props;
+
         return ( 
             <div style={{
                 position: 'absolute',
@@ -13,12 +18,14 @@ class Home extends Component {
                 marginLeft: -225,
                 marginTop: -24.2
             }}>
-                <Link to="/web">Web</Link>
-                <Link to="/backend">Back End</Link>
-                <Link to="/admin">Admin</Link>
+                
+                <Link to={`/${proj}/live`}>Live</Link>
+                <Link to={`/${proj}/qa`}>QA</Link>
+                {proj==="backend"?<Link to={`/${proj}/dg`}>Deploy Guide</Link>:null}
+
             </div>
          )
     }
 }
  
-export default Home;
+export default Guide;
