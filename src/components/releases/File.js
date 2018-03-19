@@ -29,9 +29,9 @@ class File extends React.Component {
             } else if (proj === 'web') {
 
                 if (env === 'qa') {
-                   // releaseNotes = require("../qae-release.md"); 
+                   releaseNotes = require("../markdown/web/qae-release.md"); 
                 } else {
-                   // releaseNotes = require("../live-release.md");
+                   releaseNotes = require("../markdown/web/live-release.md");
                 }
                 
 
@@ -40,7 +40,7 @@ class File extends React.Component {
                 if (env === 'qa') {
                     releaseNotes = require("../markdown/admin/qae-release.md"); 
                 } else {
-                   // releaseNotes = require("../live-release.md");
+                   releaseNotes = require("../markdown/admin/live-release.md");
                 }
                 
 
