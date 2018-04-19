@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
-import { Link } from 'react-router-dom';
 import File from './releases/File';
 import Guide from './Guide/Guide';
 import Home from './Home';

@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 
-import File from '../releases/File';
 
 import { Link } from 'react-router-dom';
 
